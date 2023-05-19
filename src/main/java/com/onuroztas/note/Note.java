@@ -14,6 +14,11 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Note {
     @Id
     private ObjectId id;
-    private String header;
-    private String description;
+    private String title;
+    private String content;
+
+    public Note(String content) {
+        this.title = "Test title";
+        this.content = content;
+    }
 }
