@@ -13,7 +13,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @NoArgsConstructor
 public class Note {
     @Id
-    private ObjectId id;
+    private String id;
     private String title;
     private String content;
 
