@@ -70,7 +70,7 @@ class NoteControllerTest {
     @Test
     public void testUpdateNoteById() throws Exception {
         // Set up mock behavior
-        Note updatedNote = new Note(ObjectId.get(), "Updated title", "Updated content");
+        Note updatedNote = new Note(ObjectId.get().toString(), "Updated title", "Updated content");
         Mockito.when(noteService.updateNoteById(Mockito.any(ObjectId.class), Mockito.any(Note.class))).thenReturn(updatedNote);
 
         // Create a new Note object
